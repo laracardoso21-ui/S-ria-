@@ -1,1 +1,48 @@
+<form action="#" method="post">
+  <!-- Pergunta 1: Texto -->
+  <div>
+    <label for="nome-visitante">1. Qual é o seu nome completo?</label><br>
+    <input type="text" id="nome-visitante" name="nome" required placeholder="Digite seu nome">
+  </div>
+  <br>
 
+  <!-- Pergunta 2: E-mail -->
+  <div>
+    <label for="email-visitante">2. Qual é o seu e-mail de contato?</label><br>
+    <input type="email" id="email-visitante" name="email" required placeholder="exemplo@email.com">
+  </div>
+  <br>
+
+  <!-- Pergunta 3: Data -->
+  <div>
+    <label for="data-visita">3. Em que data você visitou a sala da Síria/Líbano na Feira das Nações?</label><br>
+    <input type="date" id="data-visita" name="data_visita" required>
+  </div>
+  <br>
+
+  <!-- Pergunta 4: Numérica -->
+  <div>
+    <label for="nota-exposicao">4. De 1 a 10, que nota dá para a apresentação da sala sobre cultura Síria e Líbano?</label><br>
+    <input type="number" id="nota-exposicao" name="nota_exposicao" min="1" max="10" required>
+  </div>
+  <br>
+
+  <!-- Pergunta 5: Seleção / Opções -->
+  <div>
+    <label for="atraca-favorita">5. Qual elemento da cultura Síria e Líbano mais chamou a sua atenção?</label><br>
+    <select id="atraca-favorita" name="atracao_favorita" required>
+      <option value="" disabled selected>Selecione uma opção</option>
+      <option value="culinaria">Culinária tradicional </option>
+      <option value="vestimentas">Vestimentas e trajes típicos</option>
+      <option value="musica">Música </option>
+      <option value="historia">História e património arquitetónico</option>
+      <option value="artesanato">Artesanato e enfeites</option>
+    </select>
+  </div>
+  <br>
+
+  <!-- Botão de Envio -->
+  <div>
+    <button type="submit">Enviar Avaliação</button>
+  </div>
+</form>
